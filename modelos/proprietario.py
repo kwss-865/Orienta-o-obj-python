@@ -5,7 +5,7 @@ class Proprietario:
         self.nome = nome
         self.nome_completo = nome_completo
         self.imovel = imovel
-        self.localizao = localizacao
+        self.localizacao = localizacao 
         self._contrato = False
         Proprietario.proprietarios.append(self)
     
@@ -23,11 +23,11 @@ class Proprietario:
          ''')
             
         print(f'{"Nome do proprietario".ljust(20)} | {"Nome completo".ljust(20)} | {"Imóvel".ljust(20)} | {"Localização".ljust(20)} | {"Contrato"}')
-        print('-------------------------------------------------------------------------------------')
+        print('------------------------------------------------------------------------------------------------------------------')
 
         for proprietario in Proprietario.proprietarios:
             print(f'{proprietario.nome.ljust(13)} | {proprietario.nome_completo.ljust(13)} | {proprietario.imovel.ljust(13)} | {proprietario.localizacao.ljust(13)} | {proprietario.contrato}')
-        print('-------------------------------------------------------------------------------------')
+        print('-------------------------------------------------------------------------------------------------------------------')
 
     @property
     def contrato(self):
