@@ -10,8 +10,6 @@ class Proprietario:
         self._localizacao = localizacao 
         self._especificacao = []
         self._contrato = False
-        self._metrosquadrados = []
-        self._preco = []
         Proprietario.proprietarios.append(self)
     
     def __str__(self):
