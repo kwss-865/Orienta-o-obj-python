@@ -5,6 +5,9 @@ proprietario_Roberta = Proprietario('Roberta', 'Roberta Bezera', 'Casa', 'Rua Ro
 proprietario_Lia = Proprietario('Lia', 'Lia Mutsuki', 'Casa', 'Rua Lion Ribeiro 2385')
 
 proprietario_Lia.alterar_estado()
+proprietario_Ricardo.receber_especificao('70', 150.000)
+proprietario_Ricardo.receber_especificao('150', 300.000)
+proprietario_Ricardo.receber_especificao('55', 100.000)
 
 def main():
     Proprietario.listar_proprietarios() 
